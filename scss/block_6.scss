@@ -1,0 +1,107 @@
+.block-6 {
+    width: 100vw;
+    height: 60vh;
+
+    &__image-back, &__color-back {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__color-back {
+        z-index: -2;
+        opacity: 0.9;
+    }
+
+    &__image-logo {
+        width: 14vw;
+        height: 6vh;
+    }
+
+    &__footer-div {
+        margin-left: 30vw;
+        padding-top: 35vh;
+    }
+
+    &__footer {
+        width: 40vw;
+        height: 13vh;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__social {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__rights {
+        font-size: 14px;
+        line-height: 22px;
+        color: #ffffff;
+        font-family: "Gotham-Book";
+    }
+
+}
+
+.button-css-animate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    transition: 1s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 440%;
+        background: #56bef7;
+        animation: animate 4s linear infinite;
+        transition: 1s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background: #ffffff;
+    }
+
+    &:hover {
+        background-color: #56bef7;
+        box-shadow: 0 0 10px #56bef7,
+        0 0 30px #56bef7,
+        0 0 60px #56bef7;
+
+        &::before{
+            width: 100%;
+            transition: 1s;
+        }
+
+        &::after {
+            transition: 1s;
+            background: #56bef7;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.button-text {
+    z-index: 10;
+}
+

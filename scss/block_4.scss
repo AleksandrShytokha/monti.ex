@@ -1,0 +1,84 @@
+.block-4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__second-horiz-line {
+       margin-left: 2vw;
+    }
+
+    &__horiz-line {
+        width: 75px;
+        height: 1px;
+        background-color: #000000;
+    }
+
+    &__title {
+        width: 20vw;
+        height: 66px;
+    }
+
+    &__title-text {
+        width: 350px;
+        font-size: 40px;
+        line-height: 20px;
+        color: #000000;
+        font-weight: bold;
+        font-family: "Gotham-Medium";
+        text-align: center;
+    }
+
+    &__image-container {
+        display: grid;
+        width: 60vw;
+        height: 45vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-areas: 
+            "first-image first-image second-image third-image"
+            "first-image first-image fourth-image fifth-image"
+        ;
+        grid-gap: 10px;
+    }
+
+    &__button {
+        width: 190px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 1px solid #2c4058;
+        font-size: 14px;
+        line-height: 22px;
+        color: #2c4058;
+        font-family: "Gotham-Book";
+    }
+}
+
+.first-image, .second-image, .third-image,
+.fourth-image, .fifth-image {
+    width: 100%;
+    height: 100%;
+}
+
+.first-image {
+    grid-area: first-image;
+}
+
+.second-image {
+    grid-area: second-image;
+}
+
+.third-image {
+    grid-area: third-image;
+}
+
+.fourth-image {
+    grid-area: fourth-image;
+}
+
+.fifth-image {
+    grid-area: fifth-image;
+}
+

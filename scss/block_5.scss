@@ -1,0 +1,87 @@
+.block-5 {
+    width: 100vw;
+    height: 80vh;
+    
+
+    &__map-image {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+    }
+
+    &__form-div {
+        width: 45%;
+        height: 50%;
+        position: absolute;
+        margin-left: 27.5%;
+        margin-top: -13%;
+        padding: 4vh 0;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+
+    &__horiz-line {
+        width: 7vw;
+        height: 1px;
+        margin-left: 19vw;
+        background-color: #2c4058;
+    }
+
+    &__contact-title-text {
+        width: 20vw;
+        margin-left: 14.5vw;
+        font-size: 34px;
+        line-height: 22px;
+        color: #2c4058;
+        font-weight: 500;
+        font-family: "Gotham-Medium";
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__input-area {
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__input-text {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 8px 0;
+        color: #2c4058;
+        font-family: "Gotham-Book";
+        border-bottom: 2px solid #2c405859;
+
+        &:focus {
+            border-bottom: 2px solid #2c4058;
+        }
+    }
+
+    &__information-text {
+        font-size: 18px;
+        line-height: 34px;
+        color: #7e5aff;
+        font-family: "Gotham-Book";
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: 22px;
+        width: 120px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #2c4058;
+        color: #2c4058;
+        font-family: "Gotham-Book";
+        text-align: center;
+        align-self: flex-end;
+    }
+}

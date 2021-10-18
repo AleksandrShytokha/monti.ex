@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.css" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://kit.fontawesome.com/a814402d94.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>Monticello</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div class="page page-slider">
+        <div id="Head" class="page__block-1 block-1">
+            <img class="block-1__backgroundImg" src="./img/block_1_image.png" alt="chiki briki">
+            <img class="block-1__background-color" src="./img/block_1_background_color.png" alt="chiki briki">
+            <header class="block-1__header">
+                <nav class="block-1__nav">
+                    <img class="block-1__logo" src="./img/block_1_Logo.png" alt="chiki briki">
+                    <ul class="block-1__menu">
+                        <li class="nav-menu__item"><a class="scroll-tap" href="#Gallery" data-content="ABOUT US">ABOUT US</a></li>
+                        <li class="nav-menu__item"><a class="scroll-tap" href="#Projects" data-content="PROJECTS">PROJECTS</a></li>
+                        <li class="nav-menu__item"><a class="scroll-tap" href="#News" data-content="NEWS">NEWS</a></li>
+                        <li class="nav-menu__item"><a class="scroll-tap" href="#Contact" data-content="CONTACTS">CONTACT</a></li>
+                    </ul>
+                    <div class="block-1__social">
+                        <div class="round-social">
+                            <a href="https://www.facebook.com/monticellocg?fref=ts" target="blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="round-social">
+                            <a href="https://twitter.com/MCG_Careers" target="blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="round-social">
+                            <a href="https://www.instagram.com/monticello_consulting_group/" target="blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <h1 class="block-1__title">
+                SIMPLE & MODERN
+            </h1>
+            <p class="block-1__sub-title-text">
+                WE MAKE WORLD`S BEAUTIFUL EVERY DAY
+            </p>
+            <div class="round-social arrow-button scroll-tap">
+                <a class="scroll-tap" href="#Projects"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+        <div id="Projects" class="block-2">
+            <div class="horiz-line">
+                <hr class="block-2__horiz-line">
+            </div>
+            <div class="block-2__title">
+                <p class="block-2__title-text">
+                    WHAT WE DO
+                </p>
+            </div>
+            <div class="block-2__left-section">
+                <img class="left-section__back-color" src="./img/block_2_leftBack.png" alt="chiki briki">
+                <img class="left-section__image" src="./img/block_2_leftImage.png" alt="chiki briki">
+                <article class="left-section__article">
+                    <p class="article__title">
+                        ONE WORLD
+                    </p>
+                    <p class="article__title-text">
+                        TRADE CENTER
+                    </p>
+                    <p class="article__general-text">
+                        Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+                        truth is, our thoughts are very powerful.
+                    </p>
+                    <button class="article__button button-css-animate" style="--clr: #56bef7; --i:0;">
+                        <p class="button-text">MORE DETAILS</p>
+                    </button>
+                    <address class="article__address">
+                        <i class="fas fa-map-marker-alt"></i> New York City, United States - 1776 feet
+                    </address>
+                </article>
+
+            </div>
+            <div class="block-2__right-section">
+                <article class="right-section__article">
+                    <p class="article__title">
+                        INTERNATIONAL
+                    </p>
+                    <p class="article__title-text">
+                        COMMERCE CENTER
+                    </p>
+                    <p class="article__general-text">
+                        Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition
+                        and how a digital advertising network may help
+                    </p>
+                    <button class="article__button button-css-animate" style="--clr: #56bef7; --i:1;">
+                        <p class="button-text">MORE DETAILS</p>
+                    </button>
+                    <address class="article__address">
+                        <i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 feet
+                    </address>
+                </article>
+                <img class="right-section__back-color" src="./img/block_2_rightBack.png" alt="chiki briki">
+                <img class="right-section__image" src="./img/block_2_rightImage.png" alt="chiki briki">
+            </div>
+        </div>
+        <div id="News" class="block-3">
+            <img class="block-3__back-image" src="./img/block_3_backImage.png" alt="chiki briki">
+            <img class="block-3__back-color" src="./img/block_3_background_color.png" alt="chiki briki">
+            <div class="block-3__second-horiz-line">
+                <hr class="block-3__horiz-line">
+            </div>
+            <div class="block-3__title">
+                <p class="block-3__title-text">
+                    LATEST NEWS
+                </p>
+            </div>
+            <div class="news-slider">
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_firstImage.png">
+                        <p class="block-3__flex-title">
+                            See The Unmatched Beauty Of The Great.
+                        </p>
+                        <p class="block-3__flex-text">
+                            Free directories: directories are perfect for customers that are...
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_firstAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                ISAAC DUNN<br><br>
+                                <lala class="block-3__user-date">09 Feb 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_secondImage.png">
+                        <p class="block-3__flex-title">
+                            Effective Advertising Pointers.
+                        </p>
+                        <p class="block-3__flex-text">
+                            Having a home based business is a wonderful asset to your life...
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_secondAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                DOMINIC FREEMAN<br><br>
+                                <lala class="block-3__user-date">24 Apr 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_thirdImage.png">
+                        <p class="block-3__flex-title">
+                            Hypnotize Yourself Into The Ghost.
+                        </p>
+                        <p class="block-3__flex-text">
+                            There are many things that are important to catalog design....
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_thirdAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                ALICE WARD<br><br>
+                                <lala class="block-3__user-date">30 Dec 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_firstImage.png">
+                        <p class="block-3__flex-title">
+                            See The Unmatched Beauty Of The Great.
+                        </p>
+                        <p class="block-3__flex-text">
+                            Free directories: directories are perfect for customers that are...
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_firstAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                ISAAC DUNN<br><br>
+                                <lala class="block-3__user-date">09 Feb 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_secondImage.png">
+                        <p class="block-3__flex-title">
+                            Effective Advertising Pointers.
+                        </p>
+                        <p class="block-3__flex-text">
+                            Having a home based business is a wonderful asset to your life...
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_secondAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                DOMINIC FREEMAN<br><br>
+                                <lala class="block-3__user-date">24 Apr 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="block-3__flex-container">
+                        <img class="block-3__flex-image" src="./img/block_3_thirdImage.png">
+                        <p class="block-3__flex-title">
+                            Hypnotize Yourself Into The Ghost.
+                        </p>
+                        <p class="block-3__flex-text">
+                            There are many things that are important to catalog design....
+                        </p>
+                        <div class="block-3__user-container">
+                            <img class="block-3__flex-avatar" src="./img/block_3_thirdAvatar.png" alt="chiki briki">
+                            <p class="block-3__user-name">
+                                ALICE WARD<br><br>
+                                <lala class="block-3__user-date">30 Dec 2017</lala>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Gallery" class="block-4">
+            <div class="block-4__second-horiz-line">
+                <hr class="block-4__horiz-line">
+            </div>
+            <div class="block-4__title">
+                <p class="block-4__title-text">
+                    GALLERY
+                </p>
+            </div>
+            <div class="block-4__image-container">
+                <div class="image-block first-image">
+                    <img src="./img/block_4_one_leftImage.png" alt="" class="first-image">
+                </div>
+                <div class="image-block second-image">
+                    <img src="./img/block_4_right_top_firstImage.png" alt="" class="second-image">
+                </div>
+                <div class="image-block third-image">
+                    <img src="./img/block_4_right_top_secondImage.png" alt="" class="third-image">
+                </div>
+                <div class="image-block fourth-image">
+                    <img src="./img/block_4_right_bottom_firstImage.png" alt="" class="fourth-image">
+                </div>
+                <div class="image-block fifth-image">
+                    <img src="./img/block_4_right_bottom_secondImage.png" alt="" class="fifth-image">
+                </div>
+            </div>
+            <button class="block-4__button button-css-animate" style="--clr: #000000; --i:3;">
+                <p class="button-text">SEE MORE</p>
+            </button>
+        </div>
+        <div id="Map" class="block-5">
+
+        </div>
+        <div id="Footer" class="block-6">
+            <form method="get" class="block-5__form">
+                <div class="block-5__form-div">
+                    <div class="block-5__contact-horiz-line">
+                        <hr class="block-5__horiz-line">
+                    </div>
+                    <div class="block-5__contact-title">
+                        <p class="block-5__contact-title-text">
+                            GET IN TOUCH
+                        </p>
+                    </div>
+                    <div id="Contact" class="block-5__contact">
+                        <div class="block-5__contact-information">
+                            <p class="block-5__information-text">
+                                <i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions State 670<br><i
+                                    class="fas fa-phone-alt"></i> +001 356-868-2454<br><i class="fas fa-envelope"></i>
+                                gahuy93@gmail.com<br><i class="far fa-clock"></i> From 07:05AM to 19:30PM
+                            </p>
+                        </div>
+                        <div class="block-5__input-area">
+                            <input required class="block-5__input-text" type="text" name="username" value=""
+                                placeholder="Your Name">
+                            <input required class="block-5__input-text" type="email" name="usermail" value=""
+                                placeholder="Email">
+                            <button class="block-5__button button-css-animate" type="submit" style="--clr: #000000; --i:0;">
+                                <p class="button-text">SUBMIT</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <img class="block-6__image-back" src="./img/block_6_backImage.png">
+            <img class="block-6__color-back" src="./img/block_1_background_color.png">
+            <div class="block-6__footer-div">
+                <footer class="block-6__footer">
+                    <div class="block-1__social block-6__social">
+                        <img class="block-6__image-logo" src="./img/block_1_Logo.png">
+                        <div class="block-1__social">
+                            <div class="round-social">
+                                <a href="https://www.facebook.com/monticellocg?fref=ts" target="blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="round-social">
+                                <a href="https://twitter.com/MCG_Careers" target="blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="round-social">
+                                <a href="https://www.instagram.com/monticello_consulting_group/" target="blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-6__rights">
+                        Copyrights © 2017 Monticello Group | Made with <i class="far fa-heart"></i> by Ga Huy
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <script src="./src/index.js">
+    </script>
+
+</html>
